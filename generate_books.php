@@ -5,8 +5,19 @@ $faker = Faker\Factory::create();
 
 $genres = ['Fiction', 'Mystery', 'Science Fiction', 'Fantasy', 'Romance', 'Thriller', 'Historical', 'Horror'];
 
-echo "<table border='1'>";
-echo "<tr><th>Title</th><th>Author</th><th>Genre</th><th>Publication Year</th><th>ISBN</th><th>Summary</th></tr>";
+echo "<!DOCTYPE html>";
+echo "<html lang='en'>";
+echo "<head>";
+echo "<meta charset='UTF-8'>";
+echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+echo "<title>Generated Books</title>";
+echo "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>";
+echo "</head>";
+echo "<body>";
+echo "<div class='container mt-4'>";
+echo "<table class='table table-bordered table-striped'>";
+echo "<thead><tr><th>Title</th><th>Author</th><th>Genre</th><th>Publication Year</th><th>ISBN</th><th>Summary</th></tr></thead>";
+echo "<tbody>";
 
 for ($i = 0; $i < 15; $i++) {
     echo "<tr>";
@@ -19,5 +30,9 @@ for ($i = 0; $i < 15; $i++) {
     echo "</tr>";
 }
 
+echo "</tbody>";
 echo "</table>";
+echo "</div>";
+echo "</body>";
+echo "</html>";
 ?>
