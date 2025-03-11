@@ -32,7 +32,7 @@ $faker = Faker\Factory::create('en_PH');
 </head>
 <body>
     <div class="container mt-5">
-        <h2 class="mb-4">FAKE USER PROFILES</h2>
+        <h2 class="mb-4">USERS PROFILES</h2>
         <table class="table table-bordered table-striped table-custom">
             <thead>
                 <tr>
